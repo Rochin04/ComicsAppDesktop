@@ -20,7 +20,7 @@ namespace ComicsAPPDesktop
         {
             InitializeComponent();
         }
-        public void ULTIMOINTENTOAVL()
+        public void ULTIMOINTENTO()
         {
             ComicsModel comics = new ComicsModel();
             int datos = Convert.ToInt32(textBox8.Text);
@@ -151,7 +151,7 @@ namespace ComicsAPPDesktop
         #region Arreglo
         private void button3_Click(object sender, EventArgs e)//List<ComicsModel> comcicsList)
         {
-            ULTIMOINTENTOAVL();
+            ULTIMOINTENTO();
         }
         //public void AddComic()
         //{
