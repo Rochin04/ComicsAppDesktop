@@ -84,33 +84,54 @@ namespace ComicsAPPDesktop
         //buttons
         //public void Cambiar = Application.Run(new Form2());
         private void button1_Click(object sender, EventArgs e)
-        {
+        {/*
             if (radioButton1.Checked)
             {
                 Form2 form2 = new Form2();
                 form2.Show();
-                
+
                 Form1 form1 = new Form1();
                 form1.Close();
             }
-            else if (radioButton2.Checked)
-            {
+
+            Esta es la lista
+                Form2 form2 = new Form2();
+                form2.Show();
+
+            Este es el Array
+                Form3 form3 = new Form3();
+                form3.Show();
+                
+            Esta es la pila
+                Form4 form4 = new Form4();
+                form4.Show();
+
+            Este es el Queue
+                Form4 form4 = new Form4();
+                form4.Show();
+          
+          */
+            if (radioButton2.Checked)
+            { //List
+                Form2 form2 = new Form2();
+                form2.Show();
+                Form1 form1 = new Form1();
+                form1.Close();
+            }
+            else if (radioButton1.Checked)
+            {//Array
                 Form3 form3 = new Form3();
                 form3.Show();
             }
-            else if (radioButton2.Checked)
-            {
+            else if (radioButton3.Checked)
+            {//Pila
                 Form4 form4 = new Form4();
                 form4.Show();
             }
-            else if (radioButton2.Checked)
-            {
+            else if (radioButton4.Checked)
+            {//Queue
                 Form5 form5 = new Form5();
                 form5.Show();
-            }
-            else
-            {
-
             }
         }
 

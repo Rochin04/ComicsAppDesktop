@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            ListViewGroup listViewGroup1 = new ListViewGroup("ListViewGroup", HorizontalAlignment.Left);
             toolStrip1 = new ToolStrip();
             toolStripLabel1 = new ToolStripLabel();
             toolStripSeparator1 = new ToolStripSeparator();
@@ -54,6 +55,11 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            button3 = new Button();
+            listView1 = new ListView();
+            textBox8 = new TextBox();
+            label10 = new Label();
+            button4 = new Button();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,8 +69,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1, toolStripSeparator1, toolStripSplitButton1 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Padding = new Padding(0, 0, 3, 0);
-            toolStrip1.Size = new Size(1751, 34);
+            toolStrip1.Size = new Size(1704, 34);
             toolStrip1.TabIndex = 3;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -115,159 +120,250 @@
             // 
             // button2
             // 
-            button2.Location = new Point(933, 771);
+            button2.Location = new Point(261, 754);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
             button2.Size = new Size(112, 34);
             button2.TabIndex = 38;
             button2.Text = "Ver Comics";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(933, 706);
+            button1.Location = new Point(261, 689);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(112, 34);
             button1.TabIndex = 37;
             button1.Text = "Add Comic";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(809, 622);
+            textBox7.Location = new Point(164, 621);
+            textBox7.Margin = new Padding(2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(376, 31);
             textBox7.TabIndex = 36;
+            textBox7.TextChanged += textBox7_TextChanged;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(810, 548);
+            textBox6.Location = new Point(165, 546);
+            textBox6.Margin = new Padding(2);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(376, 31);
             textBox6.TabIndex = 35;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(810, 473);
+            textBox5.Location = new Point(165, 471);
+            textBox5.Margin = new Padding(2);
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(376, 31);
             textBox5.TabIndex = 34;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(810, 396);
+            textBox4.Location = new Point(165, 395);
+            textBox4.Margin = new Padding(2);
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(376, 31);
             textBox4.TabIndex = 33;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(810, 321);
+            textBox3.Location = new Point(165, 320);
+            textBox3.Margin = new Padding(2);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(376, 31);
             textBox3.TabIndex = 32;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(810, 251);
+            textBox2.Location = new Point(165, 250);
+            textBox2.Margin = new Padding(2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(376, 31);
             textBox2.TabIndex = 31;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(810, 181);
+            textBox1.Location = new Point(165, 180);
+            textBox1.Margin = new Padding(2);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(376, 31);
             textBox1.TabIndex = 30;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(744, 628);
+            label9.Location = new Point(99, 626);
+            label9.Margin = new Padding(2, 0, 2, 0);
             label9.Name = "label9";
             label9.Size = new Size(54, 25);
             label9.TabIndex = 29;
             label9.Text = "Artist";
+            label9.Click += label9_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(744, 554);
+            label8.Location = new Point(99, 552);
+            label8.Margin = new Padding(2, 0, 2, 0);
             label8.Name = "label8";
             label8.Size = new Size(60, 25);
             label8.TabIndex = 28;
             label8.Text = "Writer";
+            label8.Click += label8_Click;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(755, 479);
+            label7.Location = new Point(110, 478);
+            label7.Margin = new Padding(2, 0, 2, 0);
             label7.Name = "label7";
             label7.Size = new Size(49, 25);
             label7.TabIndex = 27;
             label7.Text = "Type";
+            label7.Click += label7_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(692, 402);
+            label6.Location = new Point(48, 401);
+            label6.Margin = new Padding(2, 0, 2, 0);
             label6.Name = "label6";
             label6.Size = new Size(112, 25);
             label6.TabIndex = 26;
             label6.Text = "Date Release";
+            label6.Click += label6_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(696, 327);
+            label5.Location = new Point(51, 326);
+            label5.Margin = new Padding(2, 0, 2, 0);
             label5.Name = "label5";
             label5.Size = new Size(108, 25);
             label5.TabIndex = 25;
             label5.Text = "Date Added";
+            label5.Click += label5_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(757, 251);
+            label4.Location = new Point(112, 250);
+            label4.Margin = new Padding(2, 0, 2, 0);
             label4.Name = "label4";
             label4.Size = new Size(47, 25);
             label4.TabIndex = 24;
             label4.Text = "Tags";
+            label4.Click += label4_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(720, 187);
+            label3.Location = new Point(75, 186);
+            label3.Margin = new Padding(2, 0, 2, 0);
             label3.Name = "label3";
             label3.Size = new Size(84, 25);
             label3.TabIndex = 23;
             label3.Text = "Publisher";
+            label3.Click += label3_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.Location = new Point(889, 104);
+            label2.Location = new Point(244, 102);
+            label2.Margin = new Padding(2, 0, 2, 0);
             label2.Name = "label2";
             label2.Size = new Size(156, 38);
             label2.TabIndex = 22;
             label2.Text = "Add Comic";
+            label2.Click += label2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label1.Location = new Point(906, 22);
+            label1.Location = new Point(261, 34);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(125, 48);
             label1.TabIndex = 21;
             label1.Text = "Arrays";
+            label1.Click += label1_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(394, 689);
+            button3.Name = "button3";
+            button3.Size = new Size(112, 34);
+            button3.TabIndex = 40;
+            button3.Text = "Mostrar";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // listView1
+            // 
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
+            listView1.Groups.AddRange(new ListViewGroup[] { listViewGroup1 });
+            listView1.Location = new Point(573, 180);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(1119, 472);
+            listView1.TabIndex = 41;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged_1;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(586, 756);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(150, 31);
+            textBox8.TabIndex = 42;
+            textBox8.TextChanged += textBox8_TextChanged;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(397, 756);
+            label10.Name = "label10";
+            label10.Size = new Size(171, 25);
+            label10.TabIndex = 43;
+            label10.Text = "Cantidad de Comics";
+            label10.Click += label10_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(766, 756);
+            button4.Name = "button4";
+            button4.Size = new Size(112, 34);
+            button4.TabIndex = 44;
+            button4.Text = "Cantidad Datos";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1751, 730);
+            ClientSize = new Size(1704, 849);
+            Controls.Add(button4);
+            Controls.Add(label10);
+            Controls.Add(textBox8);
+            Controls.Add(listView1);
+            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox7);
@@ -287,6 +383,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(toolStrip1);
+            Margin = new Padding(2);
             Name = "Form3";
             Text = "Form3";
             toolStrip1.ResumeLayout(false);
@@ -322,5 +419,10 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Button button3;
+        private ListView listView1;
+        private TextBox textBox8;
+        private Label label10;
+        private Button button4;
     }
 }
