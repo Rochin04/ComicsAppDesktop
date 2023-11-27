@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ComicsAPPDesktop.Listas;
+using ComicsAPPDesktop.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ComicsAPPDesktop
 {
@@ -82,21 +85,44 @@ namespace ComicsAPPDesktop
             button2.ForeColor = Color.Black;
             button2.BackColor = Color.White;
         }
-
         private void label6_Click(object sender, EventArgs e)
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
         }
-
+        public void ULTIMOINTENTO()
+        {
+            ListaEnlazada lista = new ListaEnlazada();
+            ComicsModel comics = new ComicsModel();
+            string publisher = comics.Publisher;
+            string tags = comics.Tags;
+            string? dateadded = comics.DateAdded;
+            string? daterelease = comics.DateAdded;
+            string? type = comics.Type;
+            string? writer = comics.Writer;
+            string? artist = comics.Artist;
+            publisher = textBox1.Text;
+            tags = textBox2.Text;
+            dateadded = textBox3.Text;
+            daterelease = textBox4.Text;
+            type = textBox5.Text;
+            writer = textBox6.Text;
+            artist = textBox7.Text;
+            lista.AgregarComics(comics);//publisher, tags, dateadded, daterelease, type, writer, artist);
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
             form6.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            ListaEnlazada lista = new ListaEnlazada();
+            lista.Imprimir();
         }
     }
 }

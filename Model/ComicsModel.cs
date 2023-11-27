@@ -16,9 +16,17 @@ namespace ComicsAPPDesktop.Model
         public string? Type { get; set; }
         public string? Writer { get; set; }
         public string? Artist { get; set; }
-        public ComicsModel()
+        public ComicsModel( )//string _Tags, string _Publisher, string _DateAdded, string _DateRelease, string _Type, string _Writer, string _Artist)
         {
             IdComic++;
+            /*Tags = _Tags;
+            Publisher = _Publisher;
+            DateAdded = _DateAdded;
+            DateRelease = _DateRelease;
+            Type = _Type;
+            Writer = _Writer;
+            Artist = _Artist;
+            */
         }
     }
    
