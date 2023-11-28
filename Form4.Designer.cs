@@ -54,7 +54,17 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            dataGridView1 = new DataGridView();
+            Id = new DataGridViewTextBoxColumn();
+            Publisher = new DataGridViewTextBoxColumn();
+            Tags = new DataGridViewTextBoxColumn();
+            DateAdded = new DataGridViewTextBoxColumn();
+            DateRelease = new DataGridViewTextBoxColumn();
+            Type = new DataGridViewTextBoxColumn();
+            Writter = new DataGridViewTextBoxColumn();
+            Artist = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
@@ -64,7 +74,7 @@
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Padding = new Padding(0, 0, 2, 0);
-            toolStrip1.Size = new Size(493, 27);
+            toolStrip1.Size = new Size(1363, 27);
             toolStrip1.TabIndex = 4;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -283,11 +293,79 @@
             label1.TabIndex = 21;
             label1.Text = "Pile";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Id, Publisher, Tags, DateAdded, DateRelease, Type, Writter, Artist });
+            dataGridView1.Location = new Point(444, 121);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.Height = 29;
+            dataGridView1.Size = new Size(897, 411);
+            dataGridView1.TabIndex = 46;
+            // 
+            // Id
+            // 
+            Id.HeaderText = "Id";
+            Id.MinimumWidth = 6;
+            Id.Name = "Id";
+            Id.Width = 125;
+            // 
+            // Publisher
+            // 
+            Publisher.HeaderText = "Publisher";
+            Publisher.MinimumWidth = 6;
+            Publisher.Name = "Publisher";
+            Publisher.Width = 125;
+            // 
+            // Tags
+            // 
+            Tags.HeaderText = "Tags";
+            Tags.MinimumWidth = 6;
+            Tags.Name = "Tags";
+            Tags.Width = 125;
+            // 
+            // DateAdded
+            // 
+            DateAdded.HeaderText = "DateAdded";
+            DateAdded.MinimumWidth = 6;
+            DateAdded.Name = "DateAdded";
+            DateAdded.Width = 125;
+            // 
+            // DateRelease
+            // 
+            DateRelease.HeaderText = "DateRelease";
+            DateRelease.MinimumWidth = 6;
+            DateRelease.Name = "DateRelease";
+            DateRelease.Width = 125;
+            // 
+            // Type
+            // 
+            Type.HeaderText = "Type";
+            Type.MinimumWidth = 6;
+            Type.Name = "Type";
+            Type.Width = 125;
+            // 
+            // Writter
+            // 
+            Writter.HeaderText = "Writter";
+            Writter.MinimumWidth = 6;
+            Writter.Name = "Writter";
+            Writter.Width = 125;
+            // 
+            // Artist
+            // 
+            Artist.HeaderText = "Artist";
+            Artist.MinimumWidth = 6;
+            Artist.Name = "Artist";
+            Artist.Width = 125;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(493, 670);
+            ClientSize = new Size(1363, 670);
+            Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(textBox7);
@@ -312,6 +390,7 @@
             Text = "Form4";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -343,5 +422,14 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn Publisher;
+        private DataGridViewTextBoxColumn Tags;
+        private DataGridViewTextBoxColumn DateAdded;
+        private DataGridViewTextBoxColumn DateRelease;
+        private DataGridViewTextBoxColumn Type;
+        private DataGridViewTextBoxColumn Writter;
+        private DataGridViewTextBoxColumn Artist;
     }
 }

@@ -1,4 +1,5 @@
-﻿using ComicsAPPDesktop.Model;
+﻿using ComicsAPPDesktop.Listas;
+using ComicsAPPDesktop.Model;
 //using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
@@ -16,9 +17,15 @@ namespace ComicsAPPDesktop
 {
     public partial class Form3 : Form
     {
+        ListaEnlazada lista;
         public Form3()
         {
             InitializeComponent();
+        }
+
+        public void ULTIMAESPERANZA()
+        {
+
         }
         public void ULTIMOINTENTO()
         {
@@ -38,12 +45,12 @@ namespace ComicsAPPDesktop
             type = textBox5.Text;
             writer = textBox6.Text;
             artist = textBox7.Text;
-            llenadoDatos(datos, publisher, tags, dateadded, daterelease, type,  writer, artist);
+            llenadoDatos(datos, publisher, tags, dateadded, daterelease, type, writer, artist);
         }
         public void llenadoDatos(int datos, string publisher, string tags, string dateadded, string daterelease, string type, string writer, string artist)
         {
             string[] comicslist = new string[datos];
-            for (int i = 0; i < datos; i++)
+            for (int i = 0; i < datos + 1; i++)
             {
                 comicslist[i] = publisher + tags + dateadded + daterelease + type + writer + artist;
                 textBox1.Text = "";
@@ -55,10 +62,19 @@ namespace ComicsAPPDesktop
                 textBox7.Text = "";
                 break;
             }
-            for(int i = 0; i < datos;i++)
+            for (int i = 0; i < datos; i++)
             {
-                MessageBox.Show(comicslist[i]);
+                MessageBox.Show(comicslist[i] + " ");
             }
+            DataTable table = new DataTable();
+            //table.Rows.Add(publisher, tags, dateadded, daterelease, type, writer, artist);
+            table.Rows.Add(publisher);
+            table.Rows.Add(tags);
+            table.Rows.Add(dateadded);
+            table.Rows.Add(daterelease);
+            table.Rows.Add(type);
+            table.Rows.Add(writer);
+            table.Rows.Add(artist);
         }
         private void button4_Click(object sender, EventArgs e)
         {

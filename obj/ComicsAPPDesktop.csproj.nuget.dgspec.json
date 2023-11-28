@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\emiro\\OneDrive\\Escritorio\\ComicsAppDesktop\\ComicsAPPDesktop.csproj": {}
+    "C:\\Users\\iirib\\Desktop\\ComicApp\\ComicsAPPDesktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\emiro\\OneDrive\\Escritorio\\ComicsAppDesktop\\ComicsAPPDesktop.csproj": {
+    "C:\\Users\\iirib\\Desktop\\ComicApp\\ComicsAPPDesktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\emiro\\OneDrive\\Escritorio\\ComicsAppDesktop\\ComicsAPPDesktop.csproj",
+        "projectUniqueName": "C:\\Users\\iirib\\Desktop\\ComicApp\\ComicsAPPDesktop.csproj",
         "projectName": "ComicsAPPDesktop",
-        "projectPath": "C:\\Users\\emiro\\OneDrive\\Escritorio\\ComicsAppDesktop\\ComicsAPPDesktop.csproj",
-        "packagesPath": "C:\\Users\\emiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\emiro\\OneDrive\\Escritorio\\ComicsAppDesktop\\obj\\",
+        "projectPath": "C:\\Users\\iirib\\Desktop\\ComicApp\\ComicsAPPDesktop.csproj",
+        "packagesPath": "C:\\Users\\iirib\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\iirib\\Desktop\\ComicApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\emiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\iirib\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -63,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
